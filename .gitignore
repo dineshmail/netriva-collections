@@ -1,0 +1,21 @@
+# Python
+__pycache__/
+*.pyc
+
+# Django
+media/
+staticfiles/
+
+# Node
+node_modules/
+
+# Environment
+.env
+
+# VS Code
+.vscode/
+
+# Build
+dist/
+build/
+.next/
