@@ -11,8 +11,9 @@ class Product(models.Model):
     name = models.CharField(max_length=255)
 
     slug = models.SlugField(
-        unique=True,
-        blank=True
+    unique=True,
+    null=True,
+    blank=True
     )
 
     description = models.TextField()
@@ -32,10 +33,11 @@ class Product(models.Model):
     stock = models.PositiveIntegerField(default=0)
 
     sku = models.CharField(
-        max_length=100,
-        unique=True
+    max_length=100,
+    unique=True,
+    null=True,
+    blank=True
     )
-
     image = models.ImageField(
         upload_to="products/",
         null=True,
