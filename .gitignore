@@ -1,19 +1,27 @@
 # Python
 __pycache__/
 *.pyc
-# Django
-media/
-staticfiles/
-# Node
-node_modules/
+
+# Virtual Environment
+.venv/
+venv/
+
 # Environment
 .env
-.venv/
+
+# Database
+db.sqlite3
+
+# Media
+media/
+
+# Node
+node_modules/
+
 # VS Code
 .vscode/
+
 # Build
 dist/
 build/
 .next/
-#database
-db.sqlite3
